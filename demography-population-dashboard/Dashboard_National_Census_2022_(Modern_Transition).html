@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vital Stats Suite — National Census 2022 (Modern Transition)</title>
+    <style>
+        body {
+            background-color: #F5F1EA;
+            color: #1F1B16;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 32px 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        h1, h2, h3 {
+            font-family: Georgia, "Playfair Display", serif;
+            font-weight: normal;
+            color: #1F1B16;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 6px;
+        }
+        .meta-bar {
+            font-size: 14px;
+            color: #CC785C;
+            margin-bottom: 24px;
+            font-weight: 500;
+        }
+        .card {
+            background: #FFFFFF;
+            border: 1px solid #E5DFD3;
+            border-radius: 14px;
+            padding: 24px 28px;
+            margin-bottom: 24px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13.5px;
+            margin-top: 12px;
+        }
+        th, td {
+            text-align: left;
+            padding: 10px 12px;
+            border-bottom: 1px solid #E5DFD3;
+        }
+        th {
+            font-family: Georgia, serif;
+            font-weight: 600;
+            color: #1F1B16;
+            background: #FAF7F2;
+        }
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-size: 11.5px;
+            font-weight: 600;
+        }
+        .badge-excellent { background: #EBF5F3; color: #2A9D8F; }
+        .badge-good { background: #EEF4F7; color: #4A6B82; }
+        .badge-warning { background: #FAF0EA; color: #CC785C; }
+        .badge-critical { background: #FCECE7; color: #C05621; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Vital Statistics Suite</h1>
+        <div class="meta-bar">Dataset: National Census 2022 (Modern Transition) &bull; Year: 2022 &bull; 23 / 22 Measures Computed</div>
+        
+        <div class="card">
+            <h2>Executive Synthesis & Top Findings</h2>
+            <p style="font-size: 15px; color: #1F1B16;">Analysis of **National Census 2022 (Modern Transition)** covers 23 evaluated demographic indicators. Fertility is below replacement level (TFR 1.63), signaling a stabilizing to contracting population trajectory. Infant survival is strong (IMR 9.0 per 1,000 live births), meeting international SDG targets. The dependency ratio is 47.0 per 100 workers, with elderly dependency at 16.4.</p>
+            
+        <div style="background: #FAF0EA; border: 1px solid rgba(204,120,92,0.3); border-radius: 12px; padding: 14px 18px; margin-bottom: 12px;">
+            <div style="font-weight: 700; color: #CC785C; font-size: 15px; margin-bottom: 4px;">General Fertility Rate: 49.05 births per 1,000 women (15-49)</div>
+            <div style="font-size: 13.5px; color: #1F1B16; line-height: 1.4;">Very Low GFR</div>
+            <div style="font-size: 12.5px; color: #6B655C; margin-top: 6px; font-style: italic;">Refines CBR by restricting the denominator strictly to women exposed to childbearing.</div>
+        </div>
+        
+        <div style="background: #FAF0EA; border: 1px solid rgba(204,120,92,0.3); border-radius: 12px; padding: 14px 18px; margin-bottom: 12px;">
+            <div style="font-weight: 700; color: #CC785C; font-size: 15px; margin-bottom: 4px;">Total Fertility Rate: 1.63 children per woman</div>
+            <div style="font-size: 13.5px; color: #1F1B16; line-height: 1.4;">Sub-Replacement Fertility (Aging trajectory)</div>
+            <div style="font-size: 12.5px; color: #6B655C; margin-top: 6px; font-style: italic;">Replacement-level fertility in low-mortality countries is ~2.1 children per woman.</div>
+        </div>
+        
+        <div style="background: #FAF0EA; border: 1px solid rgba(204,120,92,0.3); border-radius: 12px; padding: 14px 18px; margin-bottom: 12px;">
+            <div style="font-weight: 700; color: #CC785C; font-size: 15px; margin-bottom: 4px;">Gross Reproduction Rate: 0.795 daughters per woman</div>
+            <div style="font-size: 13.5px; color: #1F1B16; line-height: 1.4;">Sub-Replacement Generation (&lt; 1 daughter per woman)</div>
+            <div style="font-size: 12.5px; color: #6B655C; margin-top: 6px; font-style: italic;">Average number of daughters born per woman if she survives the entire reproductive span.</div>
+        </div>
+        
+        <div style="background: #FAF0EA; border: 1px solid rgba(204,120,92,0.3); border-radius: 12px; padding: 14px 18px; margin-bottom: 12px;">
+            <div style="font-weight: 700; color: #CC785C; font-size: 15px; margin-bottom: 4px;">Net Reproduction Rate: 0.767 surviving daughters per woman</div>
+            <div style="font-size: 13.5px; color: #1F1B16; line-height: 1.4;">Below Replacement (NRR &lt; 1.0)</div>
+            <div style="font-size: 12.5px; color: #6B655C; margin-top: 6px; font-style: italic;">Exact replacement level is NRR = 1.0. If NRR &gt; 1, population grows; if NRR &lt; 1, population contracts long-term.</div>
+        </div>
+        
+        </div>
+        
+        
+        
+        <div class="card">
+            <h2>Core Demographic Indicators & Calm Gauge Horizon</h2>
+            <div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Masculinity Proportion</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(UN DESA / Biological Baseline)</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">50.20%</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(47.3% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#1E7B6E;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>45 %</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>56 %</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#EBF5F3;color:#1E7B6E;font-size:11.5px;font-weight:600;">Excellent: Balanced Sex Proportion (Normal biological range)</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Sex Ratio</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(UN Population Division Standards)</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">100.80 males per 100 females</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(45.2% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#1E7B6E;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>85 males per 100 females</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>120 males per 100 females</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#EBF5F3;color:#1E7B6E;font-size:11.5px;font-weight:600;">Excellent: Balanced Sex Ratio (Optimal equilibrium)</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Excess of Males</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(Heuristic Standard)</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">+25,880 (+0.40%)</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(100.0% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#C86446;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>-5 persons</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>5 persons</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#F2EBE5;color:#C86446;font-size:11.5px;font-weight:600;">Moderate: Male Majority</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Age Composition Ratio</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(UN Demographic Dividend Framework)</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">Working: 68.0% | Young: 20.9% | Elderly: 11.1%</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(76.7% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#2E5C78;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>45 %</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>75 %</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#EEF4F7;color:#2E5C78;font-size:11.5px;font-weight:600;">Good: Peak Productive Ratio (Approaching subsequent aging transition)</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Total Dependency Ratio</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(World Bank / UN Population Division)</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">47.05 dependents per 100 working-age persons</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(29.4% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#2E5C78;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>25 per 100 working-age</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>100 per 100 working-age</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#EEF4F7;color:#2E5C78;font-size:11.5px;font-weight:600;">Good: Moderate Dependency</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Child Dependency Ratio</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(UN Population Division)</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">30.68 children per 100 working-age persons</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(20.9% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#1E7B6E;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>15 per 100 working-age</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>90 per 100 working-age</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#EBF5F3;color:#1E7B6E;font-size:11.5px;font-weight:600;">Excellent: Moderate Youth Dependency (Balanced school-age load)</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Old-Age Dependency Ratio</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(OECD / UN Aging Standards)</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">16.36 elderly per 100 working-age persons</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(25.3% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#1E7B6E;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>5 per 100 working-age</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>50 per 100 working-age</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#EBF5F3;color:#1E7B6E;font-size:11.5px;font-weight:600;">Excellent: Moderate Aging (Sustainable elder support)</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Crude Birth Rate</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(UN Demographic Yearbook)</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">12.85 births per 1,000 population</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(19.6% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#2E5C78;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>5 births per 1,000</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>45 births per 1,000</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#EEF4F7;color:#2E5C78;font-size:11.5px;font-weight:600;">Good: Low CBR (Developed demographic regime)</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Marital Birth Rate (GMFR)</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(Heuristic Standard)</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">64.87 births per 1,000 married women (15-49)</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(11.8% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#2E5C78;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>40 births per 1,000 married women</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>250 births per 1,000 married women</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#EEF4F7;color:#2E5C78;font-size:11.5px;font-weight:600;">Good: Low Marital Fertility (Widespread family planning)</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">General Fertility Rate</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(CDC / National Vital Statistics System)</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">49.05 births per 1,000 women (15-49)</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(12.7% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#C86446;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>30 births per 1,000 women (15-49)</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>180 births per 1,000 women (15-49)</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#FAF0EA;color:#C86446;font-size:11.5px;font-weight:600;">Concerning: Very Low GFR</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Age-Specific Fertility Rate Schedule</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(Heuristic Standard)</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">Peak: 110.0 per 1,000 (Age 25-29)</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(44.0% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#1E7B6E;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>0 births per 1,000 women in age group</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>250 births per 1,000 women in age group</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#EBF5F3;color:#1E7B6E;font-size:11.5px;font-weight:600;">Excellent: Moderate Peak Fertility</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Total Fertility Rate</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(UN DESA Population Division (Replacement Level = 2.1))</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">1.63 children per woman</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(16.0% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#C86446;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>0.8 children per woman</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>6 children per woman</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#FAF0EA;color:#C86446;font-size:11.5px;font-weight:600;">Concerning: Sub-Replacement Fertility (Aging trajectory)</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Gross Reproduction Rate</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(Preston et al. Demography Standard)</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">0.795 daughters per woman</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(15.2% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#C86446;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>0.4 daughters per woman</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>3 daughters per woman</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#FAF0EA;color:#C86446;font-size:11.5px;font-weight:600;">Concerning: Sub-Replacement Generation (&lt; 1 daughter per woman)</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Net Reproduction Rate</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(UN Population Division (Exact Replacement = 1.0))</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">0.767 surviving daughters per woman</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(17.5% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#C86446;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>0.4 surviving daughters per woman</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>2.5 surviving daughters per woman</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#FAF0EA;color:#C86446;font-size:11.5px;font-weight:600;">Concerning: Below Replacement (NRR &lt; 1.0)</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Crude Death Rate</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(WHO Global Health Observatory)</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">9.59 deaths per 1,000 population</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(38.7% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#C86446;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>3 deaths per 1,000</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>20 deaths per 1,000</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#F2EBE5;color:#C86446;font-size:11.5px;font-weight:600;">Moderate: Elevated CDR (Often driven by older age structure)</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Corrected Crude Death Rate</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(UN Vital Statistics Guidelines)</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">9.76 deaths per 1,000 (adj. at 98.2% completeness)</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(30.7% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#1E7B6E;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>3 adjusted deaths per 1,000</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>25 adjusted deaths per 1,000</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#EBF5F3;color:#1E7B6E;font-size:11.5px;font-weight:600;">Excellent: Normal Adjusted Mortality</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Neonatal Mortality Rate</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(WHO / UN SDG Target 3.2 (Goal: &lt;= 12 per 1,000))</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">5.99 deaths per 1,000 live births</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(11.3% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#2E5C78;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>1 deaths per 1,000 live births</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>45 deaths per 1,000 live births</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#EEF4F7;color:#2E5C78;font-size:11.5px;font-weight:600;">Good: SDG Target Achieved (&lt;= 12.0 per 1,000)</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Infant Mortality Rate</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(UNICEF / WHO Global Standards)</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">9.00 deaths per 1,000 live births</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(8.5% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#2E5C78;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>1.5 deaths per 1,000 live births</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>90 deaths per 1,000 live births</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#EEF4F7;color:#2E5C78;font-size:11.5px;font-weight:600;">Good: Low IMR (Good public health and sanitation)</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Child Death Rate (Age 1-4)</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(WHO / UN SDG Target 3.2.1 (Goal: &lt;= 25 per 1,000))</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">1.00 deaths per 1,000 children (1-4)</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(0.0% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#1E7B6E;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>2 deaths per 1,000 children (1-4)</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>120 deaths per 1,000 children (1-4)</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#EBF5F3;color:#1E7B6E;font-size:11.5px;font-weight:600;">Excellent: Very Low Child Mortality</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Age-Specific Death Rate Schedule</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(Heuristic Standard)</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">U-shaped curve (Min: 0.30 per 1,000 at Age 10-14)</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(88.0% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#C86446;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>0.5 deaths per 1,000 population in age group</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>30 deaths per 1,000 population in age group</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#F2EBE5;color:#C86446;font-size:11.5px;font-weight:600;">Moderate: Elevated Baseline Mortality</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Direct Standardized Death Rate</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(WHO Global Standardized Mortality Database)</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">7.86 standardized deaths per 1,000 (WHO World Standard Population (2000-2025))</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(28.6% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#2E5C78;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>3 standardized deaths per 1,000</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>20 standardized deaths per 1,000</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#EEF4F7;color:#2E5C78;font-size:11.5px;font-weight:600;">Good: Moderate Age-Standardized Mortality</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Standardized Mortality Ratio</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(Epidemiologic Standard (Null = 1.00))</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">1.000 (or 100.0%) [Obs: 62,015 / Exp: 62,015.0]</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(33.3% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#2E5C78;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>0.5 ratio (Obs / Exp)</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>2 ratio (Obs / Exp)</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#EEF4F7;color:#2E5C78;font-size:11.5px;font-weight:600;">Good: Comparable to Standard Mortality (0.85 - 1.15)</div></div><div style="background:#FFFFFF;border:1px solid #E2DCD1;border-radius:14px;padding:18px 22px;margin-bottom:14px;font-family:Inter,system-ui,-apple-system,sans-serif;box-shadow:0 1px 3px rgba(31,27,22,0.03);"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;"><div><span style="font-family:Newsreader,Georgia,serif;font-size:17px;font-weight:600;color:#1F1B16;">Indirect Standardized Death Rate</span><span style="font-size:11px;color:#7A7268;margin-left:6px;font-weight:500;">(Epidemiologic Standard)</span></div><div style="text-align:right;"><span style="font-size:20px;font-weight:700;color:#1F1B16;font-variant-numeric:tabular-nums;">9.59 deaths per 1,000 (Indirectly standardized)</span></div></div><div style="position:relative;margin:16px 0 10px 0;height:10px;background:#EDE7DD;border-radius:9999px;"><div style="position:absolute;left:30%;width:40%;height:100%;background:#D5CCC0;border-radius:9999px;"></div><div style="position:absolute;left:calc(38.7% - 8px);top:-4px;width:18px;height:18px;border-radius:50%;background:#C86446;border:2.5px solid #FFFFFF;box-shadow:0 1px 4px rgba(0,0,0,0.22);"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#5A5248;font-weight:500;margin-bottom:8px;"><span>3 indirectly standardized deaths per 1,000</span><span style="color:#7A7268;font-style:italic;">Standard Reference Horizon</span><span>20 indirectly standardized deaths per 1,000</span></div><div style="display:inline-block;padding:4px 12px;border-radius:9999px;background:#F2EBE5;color:#C86446;font-size:11.5px;font-weight:600;">Moderate: Elevated Indirect Rate</div></div>
+        </div>
+        
+        <div class="card">
+            <h2>Data Quality & Coverage Audits</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Diagnostic Check</th>
+                        <th>Score</th>
+                        <th>Status</th>
+                        <th>Interpretation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><strong>Whipple&#x27;s Index (Age Heaping on 0 and 5)</strong></td>
+                        <td>99.97</td>
+                        <td><span class="badge badge-excellent">EXCELLENT</span></td>
+                        <td>Highly accurate age reporting (negligible digit preference on 0 and 5).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>Myers&#x27; Blended Index (All Digits 0-9)</strong></td>
+                        <td>2.05</td>
+                        <td><span class="badge badge-excellent">EXCELLENT</span></td>
+                        <td>Very low digit preference (Myers&#x27; Index = 2.05). Age reporting is highly accurate.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>Post-Enumeration Check (PEC) Coverage Analysis</strong></td>
+                        <td>1.80</td>
+                        <td><span class="badge badge-excellent">EXCELLENT</span></td>
+                        <td>Excellent census coverage (98.2% completeness, 1.80% net omission).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>Dataset Completeness &amp; Measure Readiness</strong></td>
+                        <td>100.00</td>
+                        <td><span class="badge badge-excellent">EXCELLENT</span></td>
+                        <td>Dataset contains sufficient data to compute 22 demographic measures. 0 measures require additional data.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>Complete 22 Demographic Measures Inventory</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Measure Name</th>
+                        <th>Computed Value</th>
+                        <th>Status</th>
+                        <th>Standard Formula</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><strong>MP</strong></td>
+                        <td>Masculinity Proportion</td>
+                        <td><strong>50.20%</strong></td>
+                        <td><span class="badge badge-excellent">EXCELLENT</span></td>
+                        <td><small style="color: #6B655C;">MP = (Male Population / Total Population) * 100</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>SR</strong></td>
+                        <td>Sex Ratio</td>
+                        <td><strong>100.80 males per 100 females</strong></td>
+                        <td><span class="badge badge-excellent">EXCELLENT</span></td>
+                        <td><small style="color: #6B655C;">SR = (Male Population / Female Population) * 100</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>EXCESS_M</strong></td>
+                        <td>Excess of Males</td>
+                        <td><strong>+25,880 (+0.40%)</strong></td>
+                        <td><span class="badge badge-moderate">MODERATE</span></td>
+                        <td><small style="color: #6B655C;">Excess_M = Male Population - Female Population; % Excess = (Excess_M / Total Pop) * 100</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>ACR</strong></td>
+                        <td>Age Composition Ratio</td>
+                        <td><strong>Working: 68.0% | Young: 20.9% | Elderly: 11.1%</strong></td>
+                        <td><span class="badge badge-good">GOOD</span></td>
+                        <td><small style="color: #6B655C;">ACR_i = (Population in Age Bracket i / Total Population) * 100</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>TDR</strong></td>
+                        <td>Total Dependency Ratio</td>
+                        <td><strong>47.05 dependents per 100 working-age persons</strong></td>
+                        <td><span class="badge badge-good">GOOD</span></td>
+                        <td><small style="color: #6B655C;">TDR = ((P_0_14 + P_65+) / P_15_64) * 100</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>CDR_CHILD</strong></td>
+                        <td>Child Dependency Ratio</td>
+                        <td><strong>30.68 children per 100 working-age persons</strong></td>
+                        <td><span class="badge badge-excellent">EXCELLENT</span></td>
+                        <td><small style="color: #6B655C;">CDR_child = (P_0_14 / P_15_64) * 100</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>OADR</strong></td>
+                        <td>Old-Age Dependency Ratio</td>
+                        <td><strong>16.36 elderly per 100 working-age persons</strong></td>
+                        <td><span class="badge badge-excellent">EXCELLENT</span></td>
+                        <td><small style="color: #6B655C;">OADR = (P_65+ / P_15_64) * 100</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>CBR</strong></td>
+                        <td>Crude Birth Rate</td>
+                        <td><strong>12.85 births per 1,000 population</strong></td>
+                        <td><span class="badge badge-good">GOOD</span></td>
+                        <td><small style="color: #6B655C;">CBR = (Total Live Births / Total Mid-Year Population) * 1000</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>MBR</strong></td>
+                        <td>Marital Birth Rate (GMFR)</td>
+                        <td><strong>64.87 births per 1,000 married women (15-49)</strong></td>
+                        <td><span class="badge badge-good">GOOD</span></td>
+                        <td><small style="color: #6B655C;">MBR = (Marital Live Births / Married Women 15-49) * 1000</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>GFR</strong></td>
+                        <td>General Fertility Rate</td>
+                        <td><strong>49.05 births per 1,000 women (15-49)</strong></td>
+                        <td><span class="badge badge-concerning">CONCERNING</span></td>
+                        <td><small style="color: #6B655C;">GFR = (Total Live Births / Total Women 15-49) * 1000</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>ASFR</strong></td>
+                        <td>Age-Specific Fertility Rate Schedule</td>
+                        <td><strong>Peak: 110.0 per 1,000 (Age 25-29)</strong></td>
+                        <td><span class="badge badge-excellent">EXCELLENT</span></td>
+                        <td><small style="color: #6B655C;">ASFR_i = (Births_i / Women_i) * 1000</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>TFR</strong></td>
+                        <td>Total Fertility Rate</td>
+                        <td><strong>1.63 children per woman</strong></td>
+                        <td><span class="badge badge-concerning">CONCERNING</span></td>
+                        <td><small style="color: #6B655C;">TFR = 5 * sum(ASFR_i) / 1000</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>GRR</strong></td>
+                        <td>Gross Reproduction Rate</td>
+                        <td><strong>0.795 daughters per woman</strong></td>
+                        <td><span class="badge badge-concerning">CONCERNING</span></td>
+                        <td><small style="color: #6B655C;">GRR = TFR * (B_f / B_t) [assuming sex ratio at birth ~ 105]</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>NRR</strong></td>
+                        <td>Net Reproduction Rate</td>
+                        <td><strong>0.767 surviving daughters per woman</strong></td>
+                        <td><span class="badge badge-concerning">CONCERNING</span></td>
+                        <td><small style="color: #6B655C;">NRR = sum( ASFR_f,i * (nLx / (n * l0)) )</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>CDR</strong></td>
+                        <td>Crude Death Rate</td>
+                        <td><strong>9.59 deaths per 1,000 population</strong></td>
+                        <td><span class="badge badge-moderate">MODERATE</span></td>
+                        <td><small style="color: #6B655C;">CDR = (Total Deaths / Total Mid-Year Population) * 1000</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>CORRECTED_CDR</strong></td>
+                        <td>Corrected Crude Death Rate</td>
+                        <td><strong>9.76 deaths per 1,000 (adj. at 98.2% completeness)</strong></td>
+                        <td><span class="badge badge-excellent">EXCELLENT</span></td>
+                        <td><small style="color: #6B655C;">Corrected CDR = CDR / Completeness_Rate = CDR / (1 - Omission_Rate)</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>NMR</strong></td>
+                        <td>Neonatal Mortality Rate</td>
+                        <td><strong>5.99 deaths per 1,000 live births</strong></td>
+                        <td><span class="badge badge-good">GOOD</span></td>
+                        <td><small style="color: #6B655C;">NMR = (Deaths < 28 days / Live Births) * 1000</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>IMR</strong></td>
+                        <td>Infant Mortality Rate</td>
+                        <td><strong>9.00 deaths per 1,000 live births</strong></td>
+                        <td><span class="badge badge-good">GOOD</span></td>
+                        <td><small style="color: #6B655C;">IMR = (Deaths < 1 year / Live Births) * 1000</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>CMR</strong></td>
+                        <td>Child Death Rate (Age 1-4)</td>
+                        <td><strong>1.00 deaths per 1,000 children (1-4)</strong></td>
+                        <td><span class="badge badge-excellent">EXCELLENT</span></td>
+                        <td><small style="color: #6B655C;">CMR(1-4) = (Deaths 1-4 / Pop 1-4) * 1000</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>ASDR</strong></td>
+                        <td>Age-Specific Death Rate Schedule</td>
+                        <td><strong>U-shaped curve (Min: 0.30 per 1,000 at Age 10-14)</strong></td>
+                        <td><span class="badge badge-moderate">MODERATE</span></td>
+                        <td><small style="color: #6B655C;">ASDR_i = (Deaths_i / Population_i) * 1000</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>DSDR</strong></td>
+                        <td>Direct Standardized Death Rate</td>
+                        <td><strong>7.86 standardized deaths per 1,000 (WHO World Standard Population (2000-2025))</strong></td>
+                        <td><span class="badge badge-good">GOOD</span></td>
+                        <td><small style="color: #6B655C;">DSDR = sum( ASDR_i * P_std_i ) / sum( P_std_i )</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>SMR</strong></td>
+                        <td>Standardized Mortality Ratio</td>
+                        <td><strong>1.000 (or 100.0%) [Obs: 62,015 / Exp: 62,015.0]</strong></td>
+                        <td><span class="badge badge-good">GOOD</span></td>
+                        <td><small style="color: #6B655C;">SMR = Observed Deaths / Expected Deaths = D / sum( P_i * ASDR_std_i )</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>ISDR</strong></td>
+                        <td>Indirect Standardized Death Rate</td>
+                        <td><strong>9.59 deaths per 1,000 (Indirectly standardized)</strong></td>
+                        <td><span class="badge badge-moderate">MODERATE</span></td>
+                        <td><small style="color: #6B655C;">ISDR = SMR * Standard CDR</small></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        
+        <div style="text-align: center; color: #8A8175; font-size: 12px; margin-top: 32px;">
+            Generated with Vital Stats Suite &bull; Google Antigravity
+        </div>
+    </div>
+</body>
+</html>
+    
