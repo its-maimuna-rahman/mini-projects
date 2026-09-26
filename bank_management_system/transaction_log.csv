@@ -1,6 +1,0 @@
-timestamp,acc_num,type,amount,currency,category,status,balance_after
-2024-11-21 00:00,3597,add,250000,BDT,other,success,1250000
-2024-11-01 00:00,8193,transfer_out,100000,BDT,transfer,success,800000
-2024-10-29 00:00,1942,deduct,50000,USD,bills,success,150000
-2024-01-06 00:00,7843,vault_add,80000,BDT,other,success,920000
-2024-01-21 00:00,4761,cc_payback_balance,30000,USD,other,success,220000

@@ -1,6 +1,0 @@
-timestamp,acc_num,action,details
-2024-12-22 00:00,3597,ACCOUNT_ADDED,New non_credit_card | BDT | opening_bal=500000
-2024-02-28 00:00,8193,VAULT_CREATED,Vault V001 created
-2024-09-28 00:00,1942,CONVERT_TYPE,Converted to credit_card
-2024-11-14 00:00,7843,ACCOUNT_FROZEN,Frozen by admin
-2024-06-09 00:00,4761,LIMIT_CHANGED,Daily limit → 700000 BDT
